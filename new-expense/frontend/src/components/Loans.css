@@ -1,0 +1,71 @@
+.status-badge {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: 12px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.status-active {
+  background: #28a745;
+  color: white;
+}
+
+.status-completed {
+  background: #6c757d;
+  color: white;
+}
+
+.status-overdue {
+  background: #dc3545;
+  color: white;
+}
+
+.remaining-amount {
+  font-weight: bold;
+  color: #dc3545;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.loan-summary {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 2px solid #e0e0e0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.loan-summary .summary-item {
+  padding: 1rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.loan-summary .summary-label {
+  font-weight: 600;
+  color: #666;
+}
+
+.loan-summary .summary-value {
+  font-weight: bold;
+  color: #333;
+  font-size: 1.1rem;
+}
+
+.loan-summary .summary-value.pending {
+  color: #dc3545;
+}
+
+
+
+
+

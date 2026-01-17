@@ -1,0 +1,34 @@
+{
+  "name": "expense-tracker-mern",
+  "version": "1.0.0",
+  "description": "MERN Stack Expense Tracker with MongoDB Compass",
+  "main": "server.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "dev": "nodemon backend/server.js",
+    "client": "cd frontend && npm start",
+    "dev-all": "concurrently \"npm run dev\" \"npm run client\""
+  },
+  "keywords": ["expense", "tracker", "mern", "mongodb"],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^8.0.3",
+    "dotenv": "^16.3.1",
+    "cors": "^2.8.5",
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^9.0.2",
+    "googleapis": "^128.0.0",
+    "node-cron": "^3.0.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2",
+    "concurrently": "^8.2.2"
+  }
+}
+
+
+
+
+
