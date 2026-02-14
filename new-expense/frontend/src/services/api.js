@@ -1,13 +1,14 @@
 import axios from 'axios';
 
-const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:5000/api';
+const BASE_URL = process.env.REACT_APP_API_URL || "https://new-expense-7mor.onrender.com";
 
 const api = axios.create({
-  baseURL: API_URL,
+  baseURL: `${BASE_URL}/api`,
   headers: {
     'Content-Type': 'application/json',
   },
 });
+
 
 // Attach token if exists
 api.interceptors.request.use((config) => {
